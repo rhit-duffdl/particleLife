@@ -13,14 +13,12 @@ WHITE = (255, 255, 255)
 screen = pg.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pg.display.set_caption("Particle Life")
 
-colors = ["red", "green", "blue"]  # , "cyan", "pink", "purple", "white", "orange"]
-
 
 def main():
     running = True
     dt = 0
 
-    particles = Particles(colors)
+    particles = Particles(COLORS)
     print(particles.attraction_dict)
     logging.debug("starting game")
     while running:
